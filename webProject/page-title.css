@@ -1,0 +1,240 @@
+body
+{
+    margin:0;
+}
+header
+{
+    height:100px;
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom:2px white solid;
+}
+header-option
+{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:5px black solid;
+}
+header-option div
+{
+    height:50px;
+    margin:20px;
+    border-radius: 20px;
+}
+header-option div.home
+{
+    height:100px;
+    width:100px;
+    min-width: 100px;
+    background-image:url('images/Home.png');
+    background-size:100%;
+    border-radius: 100px;
+    transition:all 0.3s;
+}
+header-option div.home:hover
+{
+    transition:all 0.3s;
+    padding:15px;
+    cursor: pointer;
+}
+header-option div.other-option
+{
+    margin-top:45px;
+    margin-left:100px;
+    width:1200px;
+    display: flex;
+    justify-content: space-around;
+    font-family:Montserrat;
+    font-size:36px;
+    line-height: 50px;
+    transition:all 0.3s;
+}
+header-option div.other-option div
+{
+    color:black;
+    height: 100%;
+    font-size:30px;
+    margin:0;
+    
+    border-right:3px rgba(223, 223, 223, 0.8) solid;
+    border-left:3px rgba(223, 223, 223, 0.8) solid;
+    padding:0 20px;
+    transition: all 0.3s;
+}
+header-option div.other-option div:hover
+{
+    color:red;
+    border-bottom:3px rgba(255,21,21,1) solid;
+    cursor:pointer;
+    
+}
+header-option div.other-option img
+{
+    width:50px;
+    margin-bottom: -13px;
+    transition: all 0.3s;
+}
+@media (max-width : 1200px)
+{
+    header-option div.other-option
+    {
+        justify-content: start;
+        margin-top:20px;
+        height:100px;
+        margin-left:30px;
+    }
+    header-option div.other-option div
+    {
+        font-size:0px;
+        padding : 0;
+        margin: 0 20px;
+    }
+    header-option div.other-option img
+    {
+        padding:10px;
+        height:80px;
+        width:80px;
+    }    
+    header-option div.other-option img:hover
+    {
+        width:100px;
+        height:100px;
+        padding:0;
+        transition: all 0.3s;
+    }
+}
+header-image
+{
+    margin-top : 43px;
+    background-image:url('images/main_test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: cover;
+    display:flex;
+    height:600px;
+    width:auto;
+    background-color:orange;
+}
+gap-line
+{
+    margin-top:-20px;
+    display:flex;
+    height:20px;
+    background-color:darkcyan;
+    justify-content: center;
+}
+gap-line img
+{
+    height:200px;
+    width:200px;
+    margin-top:-90px;
+    z-index: 3;
+}
+main
+{
+    margin:0 0 100px 0;
+    font-family:Microsoft JhengHei;
+    background-color:rgb(8, 8, 8);
+}
+main h1
+{
+    text-align: center;
+    font-size: 60px;
+}
+main img.console
+{
+    width:50%;
+    margin:0 25% 50px 25%;
+}
+.hidden
+{   
+    display:none;
+}
+@keyframes fadein
+{
+    from
+    {
+        opacity: 0;
+        transform:translate(0,-200px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes zoomin
+{
+    to
+    {
+        transform: scaleX(1.2) scaleY(1.2);
+    }
+}
+@keyframes zoomout
+{
+    to
+    {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+footer
+{
+    height:100px;
+    background-color: #696969;
+}
+div.main-theme
+{
+    height:570px;
+}
+div.theme1
+{
+    margin-top:-250px;
+    height:900px;
+    background-image:linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.4)),url('images/mario_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
+    display:flex;
+}
+div.theme1 img
+{
+    margin-top:400px;
+}
+div.theme_text
+{
+    width:80%;
+    color:white;
+    padding-top:350px;
+    padding-right:100px;
+    padding-left:200px;
+    font-family: Montserrat;
+    font-size:1.5em;    
+}
+
+div.theme2
+{
+    height:800px;
+    background-image:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,.4)),url('images/zelda_1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
+    display:flex;
+    justify-content: right;
+}
+div.theme_text
+{
+    width:80%;
+}
+div.theme2 img
+{
+    margin-top:18%;
+}
+div.theme3
+{
+    height:800px;
+    background-image:linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.4)),url('images/pokemon_1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
+}
