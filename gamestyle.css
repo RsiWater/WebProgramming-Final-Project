@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: Montserrat;
+  color: rgb(0, 0, 0);
+}
+.background_img
+{
+  background-image: url('https://www.androidpolice.com/wp-content/uploads/2017/09/nexus2cee_qukdZ7p.jpg');
+  background-size: cover;
+}
+.countainer {
+  height: calc(100vh - 0rem);
+  padding: 2rem;
+  background: linear-gradient(105deg, rgb(255, 255, 255) 45%, transparent 45%);
+}
+.countainer h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.countainer h2 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 3rem;
+}
+.countainer h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.countainer ul li {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.text {
+  
+
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image:url('https://i.pinimg.com/originals/7d/75/63/7d7563b859df5cd17b606ea5253bcf30.jpg');
+  background-position:210px;
+  letter-spacing:0.3rem;
+  font-weight:700;
+  color:white;
+}
+
+.text2 {
+  padding:15px 40px 15px 40px;
+
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url('https://i.pinimg.com/originals/7d/75/63/7d7563b859df5cd17b606ea5253bcf30.jpg');
+  background-position:210px;
+  letter-spacing:0.3rem;
+  font-weight:700;
+  
+}
+
+.Pbuttons .play-button {
+  
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  transition: all .3s;
+  font-size:2rem;
+  margin-top:2rem;
+  width:150px;
+  text-decoration: none !important;
+  padding-bottom: 20px;
+}
+.Pbuttons .play-button:hover {
+  background: linear-gradient(to right, #ff5b5b, #ff0000);
+  border: 1.5px solid #ff0000;
+  cursor: pointer;
+  text-decoration: none !important;
+
+}
+.Pbuttons .play-button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+          text-decoration: none !important;
+}
+#gamedisk
+{
+  height:150vh;
+  margin-bottom:-120px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+#gamedisk .gamedisk-text h1
+{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image:url('https://s4827.pcdn.co/wp-content/uploads/2017/11/iphone_x_wallpaper_blur_2.jpg');
+  background-position:210px;
+}
+#gamedisk .gamedisk-text h2
+{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
