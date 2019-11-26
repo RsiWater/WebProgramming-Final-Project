@@ -38,6 +38,11 @@ header-option a.home
     border-radius: 100px;
     transition:all 0.3s;
 }
+header-option a
+{
+    text-decoration: none;
+    color:black;
+}
 header-option a.home:hover
 {
     transition:all 0.3s;
@@ -247,6 +252,16 @@ div.show_window .text div
 {
     min-width:100%;
     margin-right:50px;
+}
+div.show_window .text iframe
+{
+    width:100%;
+    height:100%;
+}
+div.show_window .text img
+{
+    width:50%;
+    height:50%;
 }
 @keyframes change_in
 {

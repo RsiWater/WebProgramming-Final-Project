@@ -4,7 +4,22 @@ let CHR_IMG_URL=
     'images/Zelda_img2.png',
     'images/Zelda_img3.png'
 ]
-const showContainer = document.querySelector('#show');
+// const textContainer = document.querySelector('.show_window div');
+// const imgContainer = document.querySelectorAll('.show_window img');
+// textContainer.style.display = 'none';
+// imgContainer.forEach(ele=> ele.hidden = true);
+// document.querySelector('img.head').hidden = false;
+// setTimeout(function()
+// {
+//     console.log('test');
+//     document.querySelector('img.head').style.animation = 'hiddenIn 1s';
+//     document.querySelector('img.head').addEventListener('animationend',function()
+//     {
+//         textContainer.style.display = '';
+//         textContainer.style.animation = 'showUp 1s';
+//         document.querySelector('img.head').hidden = true;
+//     })
+// },1000)
 
 const optionContainer = document.querySelectorAll('.option_container div');
 let textDives = document.querySelectorAll('.show_window .text div');

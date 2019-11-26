@@ -12,9 +12,14 @@ header
 }
 header-option
 {
+    font-family:Josefin Sans;
     display:flex;
     justify-content:space-between;
     border-bottom:5px black solid;
+    z-index: 20;
+    position:fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.5);
 }
 header-option div
 {
@@ -22,20 +27,31 @@ header-option div
     margin:20px;
     border-radius: 20px;
 }
-header-option div.home
+header-option a.home
 {
+    margin-top:1vh;
     height:100px;
     width:100px;
     min-width: 100px;
+    max-width: 100px;
     background-image:url('images/Home.png');
     background-size:100%;
     border-radius: 100px;
     transition:all 0.3s;
 }
-header-option div.home:hover
+header-option a
+{
+    text-decoration: none;
+    color:black;
+}
+header-option a:hover
+{
+    color:red;
+}
+header-option a.home:hover
 {
     transition:all 0.3s;
-    padding:15px;
+    border-radius: 20px;
     cursor: pointer;
 }
 header-option div.other-option
@@ -45,7 +61,6 @@ header-option div.other-option
     width:1200px;
     display: flex;
     justify-content: space-around;
-    font-family:Montserrat;
     font-size:36px;
     line-height: 50px;
     transition:all 0.3s;
@@ -67,19 +82,26 @@ header-option div.other-option div:hover
     color:red;
     border-bottom:3px rgba(255,21,21,1) solid;
     cursor:pointer;
-    
 }
+
 header-option div.other-option img
 {
     width:50px;
     margin-bottom: -13px;
     transition: all 0.3s;
 }
+@media (max-width : 1500px)
+{
+    div.theme_text
+    {
+        font-size:1.2em !important; 
+    }
+}
 @media (max-width : 1200px)
 {
     header-option div.other-option
     {
-        justify-content: start;
+        justify-content: space-around;
         margin-top:20px;
         height:100px;
         margin-left:30px;
@@ -103,10 +125,14 @@ header-option div.other-option img
         padding:0;
         transition: all 0.3s;
     }
+    #switch
+    {
+        height:120vh !important;
+    }
 }
 header-image
 {
-    margin-top : 43px;
+    margin-top : 12px;
     background-image:url('images/main_test.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,12 +142,14 @@ header-image
     width:auto;
     background-color:orange;
 }
+
 gap-line
 {
     margin-top:-20px;
     display:flex;
-    height:20px;
-    background-color:darkcyan;
+    height:40px;
+    margin-bottom: -20px;
+    background-color:rgb(0, 103, 187,.7);
     justify-content: center;
 }
 gap-line img
@@ -133,7 +161,7 @@ gap-line img
 }
 main
 {
-    margin:0 0 100px 0;
+    margin:0;
     font-family:Microsoft JhengHei;
     background-color:rgb(8, 8, 8);
 }
@@ -156,7 +184,20 @@ main img.console
     from
     {
         opacity: 0;
-        transform:translate(0,-200px);
+        transform:translate(-200px,0px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes fadein-right
+{
+    from
+    {
+        opacity: 0;
+        transform:translate(200px,0);
     }
     to
     {
@@ -178,14 +219,17 @@ main img.console
         transform: scaleX(1) scaleY(1);
     }
 }
-footer
-{
-    height:100px;
-    background-color: #696969;
-}
+
 div.main-theme
 {
     height:570px;
+}
+div.theme_text
+{
+    width:80%;
+    color:white;
+    font-family: Montserrat;
+    font-size:1.5em;    
 }
 div.theme1
 {
@@ -200,21 +244,22 @@ div.theme1
 div.theme1 img
 {
     margin-top:400px;
+    margin-left:5vw;
 }
-div.theme_text
+div.theme1 .theme_text
 {
-    width:80%;
-    color:white;
     padding-top:350px;
     padding-right:100px;
     padding-left:200px;
-    font-family: Montserrat;
-    font-size:1.5em;    
 }
-
+div.theme1 h1
+{
+    font-size:60px;
+    text-align: left;
+}
 div.theme2
 {
-    height:800px;
+    height:900px;
     background-image:linear-gradient(to left,rgba(0,0,0,1),rgba(0,0,0,.4)),url('images/zelda_1.JPG');
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,19 +267,86 @@ div.theme2
     display:flex;
     justify-content: right;
 }
-div.theme_text
-{
-    width:80%;
-}
 div.theme2 img
 {
     margin-top:18%;
+    margin-right:5vw;
+}
+div.theme2 .theme_text
+{
+    padding-top:28vh;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+div.theme2 h1
+{
+    font-size:60px;
+    text-align: left;
 }
 div.theme3
 {
-    height:800px;
+    display: flex;
+    height:900px;
     background-image:linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.4)),url('images/pokemon_1.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
+}
+div.theme3 img
+{
+  margin-top :18%;
+  margin-left:5vw;
+}
+div.theme3 h1
+{
+    font-size:60px;
+    text-align: left;
+}
+div.theme3 .theme_text
+{
+    padding-top:28vh;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+
+div.quiz
+{
+    padding:5vh 5vw;
+    text-align:center;
+    font-size: 28px;
+    color:white;
+    background-color:rgb(8, 8, 8);
+    height:20vh;
+}
+div.quiz div
+{
+    margin:20px;
+}
+div.quiz div .question
+{
+    padding:2px 20px;
+    text-decoration: none;
+    color:white;
+    border-radius: 10px;
+    border-left:2px rgb(230,230,230) solid;
+    border-right:2px rgb(230,230,230) solid;
+    transition: all .3s;
+}
+div.quiz div .question:hover
+{
+    color:red;
+    border-bottom:2px red solid;
+}
+footer
+{
+    padding:5vh;
+    font-size:18px;
+    color :white;
+    height:100px;
+    background-color: red;
+}
+footer img
+{
+    margin-bottom:-20px;
+    width:10vw;
 }
