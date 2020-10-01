@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes display{
+  from{
+      transform:scaleY(0);
+  }
+  to{
+      transform:scaleY(1);
+  }
+}
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: Montserrat;
+  color: rgb(255, 255, 255);
+}
+
+.countainer {
+  height: calc(100vh - 0rem);
+  padding: 2rem;
+  background-image: linear-gradient(105deg, rgb(0, 0, 0) 45%, transparent 45%),url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5670/5670003cv14d.jpg');
+
+  background-size: cover;
+}
+.countainer h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.countainer h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+}
+.countainer h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.countainer ul li {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.text {
+  
+
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image:url('https://s4827.pcdn.co/wp-content/uploads/2017/11/iphone_x_wallpaper_blur_2.jpg');
+  background-position:210px;
+  letter-spacing:0.3rem;
+  font-weight:700;
+  color:white;
+  transform-origin:left;
+  animation:display 1s;
+}
+
+.text2 {
+  padding:15px 40px 15px 40px;
+
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image:url('https://pbs.twimg.com/media/CLwaMRvUMAU0q67.jpg');
+  background-position:210px;
+  letter-spacing:0.3rem;
+  font-weight:700;
+  color:white;
+  transform-origin:left;
+  animation:display 1s;
+}
+
+.buttons .play-button {
+  
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  transition: all .3s;
+  font-size:2rem;
+  margin-top:2rem;
+  text-decoration: none !important;
+  transform-origin:left;
+  animation:display 1s;
+ 
+ 
+}
+.buttons .play-button:hover {
+  background: linear-gradient(to right, #ff5b5b, #ff0000);
+  border: 1.5px solid #ff0000;
+  cursor: pointer;
+  text-decoration: none !important;
+
+}
+.buttons .play-button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+          text-decoration: none !important;
+ 
+}
